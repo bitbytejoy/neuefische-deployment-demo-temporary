@@ -21,4 +21,9 @@ public class StatusController {
         testRecordRepository.save(new TestRecord());
         return "DONE";
     }
+
+    @GetMapping("/emoji")
+    public String emoji () {
+        return "👻";
+    }
 }
